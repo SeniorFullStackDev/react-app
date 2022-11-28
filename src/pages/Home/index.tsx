@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar, Box, Button, Container, Toolbar, Typography } from '@mui/material'
+import { AppBar, Box, Button, Container, Divider, Grid, Toolbar, Typography } from '@mui/material'
 import '@fontsource/ultra'
 import '@fontsource/slabo-13px'
 import CustomCarousel from 'components/CustomCarousel'
@@ -42,8 +42,81 @@ const Home = () => {
 				<Box sx = {{ width: { xs: 'auto', sm: '800px' }, m: 'auto', mt: 4 }}>
 					<CustomCarousel />
 				</Box>
-			</Container>
+				<Box sx = {{ mt: 16 }}>
+					<Divider sx = {{ width: '50px', m: 'auto', borderColor: 'black', borderWidth: '1px' }}/>
+					<Typography variant='h6' textAlign="center" sx = {{ mt: 4, fontFamily: "'Ultra', serif" }}>CONTACT US</Typography>
+				</Box>
 
+				<Box sx = {{ mt: 4 }}>
+					<Grid container spacing={2}>
+						<Grid item xs={12} md = {6}>
+							<Typography variant='h3' sx = {{ fontSize: '1em', fontWeight: 'bold' }}>Address</Typography>
+							<Button sx = {{ mt: 4, px: 4 }} color="info" variant="contained">
+								<Typography lineHeight={2.5}>
+									GET DIRECTION
+								</Typography>
+							</Button>
+							<Typography sx = {{ mt: 4 }}>
+								{/* 542 9th Avenue <br/>
+								New York, NY 10018<br/>
+								USA */}
+							</Typography>
+						</Grid>
+						<Grid item xs={12} md = {6}>
+							<Typography variant='h3' sx = {{ fontSize: '1em', fontWeight: 'bold' }}>Business Hours</Typography>
+							<Typography sx = {{ mt: 4 }}>
+								<Box sx = {{ width: '250px' }}>
+									<Grid container spacing={[2, 1]}>
+										<Grid item xs = {6}>
+											Monday:
+										</Grid>
+										<Grid item xs = {6}>
+											8am-4pm
+										</Grid>
+										<Grid item xs = {6}>
+										Tuesday:
+										</Grid>
+										<Grid item xs = {6}>
+											8am-4pm
+										</Grid>
+										<Grid item xs = {6}>
+											Wednesday:
+										</Grid>
+										<Grid item xs = {6}>
+											8am-4pm
+										</Grid>
+										<Grid item xs = {6}>
+											Thursday:
+										</Grid>
+										<Grid item xs = {6}>
+											8am-4pm
+										</Grid>
+										<Grid item xs = {6}>
+											Friday:
+										</Grid>
+										<Grid item xs = {6}>
+											8am-4pm
+										</Grid>
+										<Grid item xs = {6}>
+											Saturday:
+										</Grid>
+										<Grid item xs = {6}>
+											10am-4pm
+										</Grid>
+										<Grid item xs = {6}>
+											Sunday:
+										</Grid>
+										<Grid item xs = {6}>
+											Closed
+										</Grid>
+									</Grid>
+								</Box>
+							</Typography>
+						</Grid>
+					</Grid>
+				</Box>
+				<Box sx = {{ height: '100px' }} />
+			</Container>
 		</div>
   )
 }
