@@ -26,7 +26,7 @@ const CustomCarousel = () => {
   ]
 
   return (
-		<Carousel height={500} animation = "slide">
+		<Carousel height={500} animation = "slide" autoPlay = {false} >
 			{
 				items.map((item, i) => <Item key={i} item={item} />)
 			}
