@@ -6,6 +6,8 @@ import CustomCarousel from 'components/CustomCarousel'
 import { Directions } from '@mui/icons-material'
 
 const Home = () => {
+  // const mylocation = "https://goo.gl/maps/xtSV1AEcbiqvMjuS8"
+  const mylocation = 'https://goo.gl/maps/cyPtuzzPcPipGaed9'
   return (
 		<div>
 			<AppBar position="static">
@@ -25,7 +27,7 @@ const Home = () => {
 						</Typography>
 						<Box sx={{ display: { xs: 'none', sm: 'block' } }}>
 							<Button color="secondary" ><Typography component="span">About Us</Typography></Button>
-							<Button color="secondary" href="https://goo.gl/maps/xtSV1AEcbiqvMjuS8" startIcon = {<Directions/>} ><Typography component="span">Find Us</Typography></Button>
+							<Button color="secondary" href={mylocation} startIcon = {<Directions/>} ><Typography component="span">Find Us</Typography></Button>
 						</Box>
 					</Toolbar>
 				</Container>
