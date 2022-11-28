@@ -25,7 +25,7 @@ const Home = () => {
 						</Typography>
 						<Box sx={{ display: { xs: 'none', sm: 'block' } }}>
 							<Button color="secondary" ><Typography component="span">About Us</Typography></Button>
-							<Button color="secondary" startIcon = {<Directions/>} ><Typography component="span">Find Us</Typography></Button>
+							<Button color="secondary" href="https://goo.gl/maps/xtSV1AEcbiqvMjuS8" startIcon = {<Directions/>} ><Typography component="span">Find Us</Typography></Button>
 						</Box>
 					</Toolbar>
 				</Container>
