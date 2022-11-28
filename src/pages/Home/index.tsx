@@ -3,6 +3,7 @@ import { AppBar, Box, Button, Container, Divider, Grid, Toolbar, Typography } fr
 import '@fontsource/ultra'
 import '@fontsource/slabo-13px'
 import CustomCarousel from 'components/CustomCarousel'
+import { Directions } from '@mui/icons-material'
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
 						</Typography>
 						<Box sx={{ display: { xs: 'none', sm: 'block' } }}>
 							<Button color="secondary" ><Typography component="span">About Us</Typography></Button>
-							<Button color="secondary"><Typography component="span">Find Us</Typography></Button>
+							<Button color="secondary" startIcon = {<Directions/>} ><Typography component="span">Find Us</Typography></Button>
 						</Box>
 					</Toolbar>
 				</Container>
