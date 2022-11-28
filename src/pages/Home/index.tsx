@@ -45,11 +45,14 @@ const Home = () => {
 				<Box sx = {{ width: { xs: 'auto', sm: '800px' }, m: 'auto', mt: 4 }}>
 					<CustomCarousel />
 				</Box>
+
 				<Box sx = {{ mt: 16 }}>
 					<Divider sx = {{ width: '50px', m: 'auto', borderColor: 'black', borderWidth: '1px' }}/>
 					<Typography variant='h6' textAlign="center" sx = {{ mt: 4, fontFamily: "'Ultra', serif" }}>CONTACT US</Typography>
+					<Box sx = {{ m: 'auto', width: 'max-content', mt: 4 }}>
+						<Box component="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27762.558052491488!2d116.39104245797508!3d39.90540576461215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f05296e7142cb9%3A0xb9625620af0fa98a!2sBeijing%2C%20China!5e0!3m2!1sen!2s!4v1669663136513!5m2!1sen!2s" sx = {{ height: '450px', width: { sx: '100%', md: '600px' }, border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></Box>
+					</Box>
 				</Box>
-
 				<Box sx = {{ mt: 4 }}>
 					<Grid container spacing={2}>
 						<Grid item xs={12} md = {6}>
@@ -64,7 +67,9 @@ const Home = () => {
 								New York, NY 10018<br/>
 								USA */}
 							</Typography>
+
 						</Grid>
+
 						<Grid item xs={12} md = {6}>
 							<Typography variant='h3' sx = {{ fontSize: '1em', fontWeight: 'bold' }}>Business Hours</Typography>
 							<Typography sx = {{ mt: 4 }}>
