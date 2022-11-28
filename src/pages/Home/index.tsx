@@ -6,8 +6,8 @@ import CustomCarousel from 'components/CustomCarousel'
 import { Directions } from '@mui/icons-material'
 
 const Home = () => {
-  const mylocation = 'https://goo.gl/maps/xtSV1AEcbiqvMjuS8'
-  //   const mylocation = 'https://goo.gl/maps/cyPtuzzPcPipGaed9'
+  const mylocation = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d310.38860684386657!2d-0.1352673!3d51.5112189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876057cc8805b41%3A0x60c897012e57e344!2sHideaway%20Coffee!5e0!3m2!1sen!2s!4v1669676523175!5m2!1sen!2s'
+  //   const mylocation = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15114.489264698877!2d116.40399189095776!3d39.91132724264659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f052cec352f5b1%3A0x37bce60f8282d2cf!2sMandarin%20Oriental%20Wangfujing%20Beijing!5e0!3m2!1sen!2sus!4v1669663968124!5m2!1sen!2sus'
   return (
 		<div>
 			<AppBar position="static">
@@ -50,7 +50,7 @@ const Home = () => {
 					<Divider sx = {{ width: '50px', m: 'auto', borderColor: 'black', borderWidth: '1px' }}/>
 					<Typography variant='h6' textAlign="center" sx = {{ mt: 4, fontFamily: "'Ultra', serif" }}>CONTACT US</Typography>
 					<Box sx = {{ m: 'auto', width: 'max-content', mt: 4 }}>
-						<Box component="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15114.489264698877!2d116.40399189095776!3d39.91132724264659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f052cec352f5b1%3A0x37bce60f8282d2cf!2sMandarin%20Oriental%20Wangfujing%20Beijing!5e0!3m2!1sen!2sus!4v1669663968124!5m2!1sen!2sus" sx = {{ height: '450px', width: { sx: '100%', md: '600px' }, border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></Box>
+						<Box component="iframe" src={mylocation} sx = {{ height: '450px', width: { sx: '100%', md: '600px' }, border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></Box>
 					</Box>
 				</Box>
 				<Box sx = {{ mt: 4 }}>
