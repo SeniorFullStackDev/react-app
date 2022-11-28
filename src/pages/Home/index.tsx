@@ -50,7 +50,7 @@ const Home = () => {
 					<Divider sx = {{ width: '50px', m: 'auto', borderColor: 'black', borderWidth: '1px' }}/>
 					<Typography variant='h6' textAlign="center" sx = {{ mt: 4, fontFamily: "'Ultra', serif" }}>CONTACT US</Typography>
 					<Box sx = {{ m: 'auto', width: 'max-content', mt: 4 }}>
-						<Box component="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27762.558052491488!2d116.39104245797508!3d39.90540576461215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f05296e7142cb9%3A0xb9625620af0fa98a!2sBeijing%2C%20China!5e0!3m2!1sen!2s!4v1669663136513!5m2!1sen!2s" sx = {{ height: '450px', width: { sx: '100%', md: '600px' }, border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></Box>
+						<Box component="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15114.489264698877!2d116.40399189095776!3d39.91132724264659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f052cec352f5b1%3A0x37bce60f8282d2cf!2sMandarin%20Oriental%20Wangfujing%20Beijing!5e0!3m2!1sen!2sus!4v1669663968124!5m2!1sen!2sus" sx = {{ height: '450px', width: { sx: '100%', md: '600px' }, border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></Box>
 					</Box>
 				</Box>
 				<Box sx = {{ mt: 4 }}>
