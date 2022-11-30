@@ -7,6 +7,7 @@ import { Directions } from '@mui/icons-material'
 
 const Home = () => {
   const mylocation = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d310.38860684386657!2d-0.1352673!3d51.5112189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876057cc8805b41%3A0x60c897012e57e344!2sHideaway%20Coffee!5e0!3m2!1sen!2s!4v1669676523175!5m2!1sen!2s'
+  const shopLocation = 'https://goo.gl/maps/xtSV1AEcbiqvMjuS8 '
   const devlocation = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15114.489264698877!2d116.40399189095776!3d39.91132724264659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f052cec352f5b1%3A0x37bce60f8282d2cf!2sMandarin%20Oriental%20Wangfujing%20Beijing!5e0!3m2!1sen!2sus!4v1669663968124!5m2!1sen!2sus'
 
   return (
@@ -27,8 +28,8 @@ const Home = () => {
                             Hideaway Coffee
 						</Typography>
 						<Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-							<Button color="secondary" ><Typography component="span">About Us</Typography></Button>
-							<Button color="secondary" href={devlocation} startIcon = {<Directions/>} ><Typography component="span">Find Us</Typography></Button>
+							<Button color="secondary" href = "https://www.instagram.com/hideawaycoffee/"><Typography component="span">About Us</Typography></Button>
+							<Button color="secondary" href={shopLocation} startIcon = {<Directions/>} ><Typography component="span">Find Us</Typography></Button>
 						</Box>
 					</Toolbar>
 				</Container>
