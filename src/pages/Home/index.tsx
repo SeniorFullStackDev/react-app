@@ -38,7 +38,7 @@ const Home = () => {
 				<Box sx = {{ textAlign: 'center', fontFamily: "'Slabo 13px', serif" }}>
 					<Typography variant="h3" color="secondary" textAlign="center" sx = {{ mt: 8, fontFamily: "'Ultra', serif" }}>Hideaway Coffee</Typography>
 					<Typography marginTop={4}>Cafe in London</Typography>
-					<Button sx = {{ mt: 4, px: 4 }} color="info" variant="contained">
+					<Button sx = {{ mt: 4, px: 4 }} color="info" variant="contained" href = {shopLocation}>
 						<Typography lineHeight={2.5}>
                             Find Us
 						</Typography>
